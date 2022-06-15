@@ -55,7 +55,7 @@ Feel free to check out the Medium article on this [here](https://medium.com/@lou
 
 * LinkedIn- [Louis Magowan](https://www.linkedin.com/in/louismagowan/)
 * Medium - [Louis Magowan](https://medium.com/@louismagowan42)
-* Project Link: [https://github.com/louismagowan/fake_news_classifier](https://github.com/louismagowan/fake_news_classifier)
+* Project Link: [https://github.com/louismagowan/lgbm-music_classifier](https://github.com/louismagowan/lgbm-music_classifier)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -75,16 +75,16 @@ Feel free to check out the Medium article on this [here](https://medium.com/@lou
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/louismagowan/fake_news_classifier.svg?style=for-the-badge
-[contributors-url]: https://github.com/louismagowan/fake_news_classifier/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/louismagowan/fake_news_classifier.svg?style=for-the-badge
-[forks-url]: https://github.com/louismagowan/fake_news_classifier/network/members
-[stars-shield]: https://img.shields.io/github/stars/louismagowan/fake_news_classifier.svg?style=for-the-badge
-[stars-url]: https://github.com/louismagowan/fake_news_classifier/stargazers
-[issues-shield]: https://img.shields.io/github/issues/louismagowan/fake_news_classifier.svg?style=for-the-badge
-[issues-url]: https://github.com/louismagowan/fake_news_classifier/issues
-[license-shield]: https://img.shields.io/github/license/louismagowan/fake_news_classifier.svg?style=for-the-badge
-[license-url]: https://github.com/louismagowan/fake_news_classifier/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/louismagowan/lgbm-music_classifier.svg?style=for-the-badge
+[contributors-url]: https://github.com/louismagowan/lgbm-music_classifier/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/louismagowan/lgbm-music_classifier.svg?style=for-the-badge
+[forks-url]: https://github.com/louismagowan/lgbm-music_classifier/network/members
+[stars-shield]: https://img.shields.io/github/stars/louismagowan/lgbm-music_classifier.svg?style=for-the-badge
+[stars-url]: https://github.com/louismagowan/lgbm-music_classifier/stargazers
+[issues-shield]: https://img.shields.io/github/issues/louismagowan/lgbm-music_classifier.svg?style=for-the-badge
+[issues-url]: https://github.com/louismagowan/lgbm-music_classifier/issues
+[license-shield]: https://img.shields.io/github/license/louismagowan/lgbm-music_classifier.svg?style=for-the-badge
+[license-url]: https://github.com/louismagowan/lgbm-music_classifier/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/louismagowan/
 [product-screenshot]: images/screenshot.png
