@@ -1,0 +1,14 @@
+# Usual things to exclude
+.DS_Store
+
+*.Rhistory
+
+*.ipynb_checkpoints
+*__pycache__
+
+# Original Kaggle files
+Fake.csv
+True.csv
+
+*.jpeg
+*.png
