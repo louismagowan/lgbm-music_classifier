@@ -21,12 +21,14 @@
 
 
 
-<h3 align="center">Fake News Classification with Keras</h3>
+<h3 align="center">Music Genre Classification with LightGBM</h3>
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+
+WIP!!!! 
 This project looks at building, training and evaluating neural networks to solve the [fake news classification problem](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset) on Kaggle. It uses Python and Keras. 
 
 Gated Recurrent Units (GRUs) are used, along with batch normalization and both spaCy and Keras embedding layers. 
