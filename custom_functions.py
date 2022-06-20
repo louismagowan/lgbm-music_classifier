@@ -12,6 +12,7 @@ from sklearn.decomposition import PCA, TruncatedSVD
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from sklearn.metrics import f1_score
 from keras.layers import Dense, Input, LeakyReLU, BatchNormalization
+from keras.callbacks import EarlyStopping
 from keras import Model
 
 # -------------------------------------------------------------------------------------------------------------------------
@@ -88,9 +89,12 @@ def autoencode(lyric_tr, n_components):
 
     # compile autoencoder model
     model.compile(optimizer='adam', loss='mse')
+    # Create callback
+    callbacks = EarlyStopping(patience = 10, restore_best_weights = True)
     # train model
     model.fit(lyric_tr, lyric_tr, epochs=200,
-                        batch_size=16, verbose=1, validation_split=0.2)
+                        batch_size=16, verbose=1, validation_split=0.2,
+             callbacks = callbacks)
     
     # define an encoder model (without the decoder)
     encoder = Model(inputs=visible, outputs=bottleneck)
