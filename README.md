@@ -21,12 +21,14 @@
 
 
 
-<h3 align="center">Fake News Classification with Keras</h3>
+<h3 align="center">Music Genre Classification with LightGBM</h3>
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+
+WIP!!!! 
 This project looks at building, training and evaluating neural networks to solve the [fake news classification problem](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset) on Kaggle. It uses Python and Keras. 
 
 Gated Recurrent Units (GRUs) are used, along with batch normalization and both spaCy and Keras embedding layers. 
@@ -53,7 +55,7 @@ Feel free to check out the Medium article on this [here](https://medium.com/@lou
 
 * LinkedIn- [Louis Magowan](https://www.linkedin.com/in/louismagowan/)
 * Medium - [Louis Magowan](https://medium.com/@louismagowan42)
-* Project Link: [https://github.com/louismagowan/fake_news_classifier](https://github.com/louismagowan/fake_news_classifier)
+* Project Link: [https://github.com/louismagowan/lgbm-music_classifier](https://github.com/louismagowan/lgbm-music_classifier)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -63,9 +65,6 @@ Feel free to check out the Medium article on this [here](https://medium.com/@lou
 ## Acknowledgments
 
 * [othneildrew - README template](https://github.com/othneildrew/Best-README-Template/blob/master/BLANK_README.md)
-* [LSE Department of Statistics](https://www.lse.ac.uk/statistics)
-* [Fake News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
-* [Information Leaks in Kaggle Fake News Dataset](https://www.kaggle.com/code/mosewintner/5-data-leaks-100-acc-1-word-99-6-acc?scriptVersionId=45283074)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -73,16 +72,16 @@ Feel free to check out the Medium article on this [here](https://medium.com/@lou
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/louismagowan/fake_news_classifier.svg?style=for-the-badge
-[contributors-url]: https://github.com/louismagowan/fake_news_classifier/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/louismagowan/fake_news_classifier.svg?style=for-the-badge
-[forks-url]: https://github.com/louismagowan/fake_news_classifier/network/members
-[stars-shield]: https://img.shields.io/github/stars/louismagowan/fake_news_classifier.svg?style=for-the-badge
-[stars-url]: https://github.com/louismagowan/fake_news_classifier/stargazers
-[issues-shield]: https://img.shields.io/github/issues/louismagowan/fake_news_classifier.svg?style=for-the-badge
-[issues-url]: https://github.com/louismagowan/fake_news_classifier/issues
-[license-shield]: https://img.shields.io/github/license/louismagowan/fake_news_classifier.svg?style=for-the-badge
-[license-url]: https://github.com/louismagowan/fake_news_classifier/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/louismagowan/lgbm-music_classifier.svg?style=for-the-badge
+[contributors-url]: https://github.com/louismagowan/lgbm-music_classifier/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/louismagowan/lgbm-music_classifier.svg?style=for-the-badge
+[forks-url]: https://github.com/louismagowan/lgbm-music_classifier/network/members
+[stars-shield]: https://img.shields.io/github/stars/louismagowan/lgbm-music_classifier.svg?style=for-the-badge
+[stars-url]: https://github.com/louismagowan/lgbm-music_classifier/stargazers
+[issues-shield]: https://img.shields.io/github/issues/louismagowan/lgbm-music_classifier.svg?style=for-the-badge
+[issues-url]: https://github.com/louismagowan/lgbm-music_classifier/issues
+[license-shield]: https://img.shields.io/github/license/louismagowan/lgbm-music_classifier.svg?style=for-the-badge
+[license-url]: https://github.com/louismagowan/lgbm-music_classifier/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/louismagowan/
 [product-screenshot]: images/screenshot.png
