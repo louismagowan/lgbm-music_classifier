@@ -100,9 +100,8 @@ def autoencode(lyric_tr, n_components):
 
 
 
-def pre_process(y_train = pd.Series,
-                X_train = pd.DataFrame,
-                X_test = pd.DataFrame,
+def pre_process(train = pd.DataFrame,
+                test = pd.DataFrame,
                 reduction_method = "pca",
                 n_components = 400):
     """
@@ -121,14 +120,17 @@ def pre_process(y_train = pd.Series,
     n_components = int, the number of dimensions you want the lyric data to be
     reduced to
     """
-
-    # # Set seed for reproducibility
-    # set_seed()
-
+    # Separate into X and y
+    y_train = train.playlist_genre
+    y_test = test.playlist_genre
+    X_train = train.drop(columns = "playlist_genre")
+    X_test = test.drop(columns = "playlist_genre")
+    
     # Make label into numeric
     # Convert from string to numerics
     label_encoder = LabelEncoder()
     label_train = label_encoder.fit_transform(y_train)
+    label_test = label_encoder.transform(y_test)
 
     # Normalise both test and train data
     scaler = MinMaxScaler()
@@ -142,14 +144,14 @@ def pre_process(y_train = pd.Series,
     X_norm_te = pd.DataFrame(X_norm_te, columns = X_test.columns)
 
     # Convert mode and key back to categorical features
-    X_norm_tr["audio_mode"] = X_train["audio_mode"].astype("category")
-    X_norm_tr["audio_key"] = X_train["audio_key"].astype("category")
-    X_norm_te["audio_mode"] = X_test["audio_mode"].astype("category")
-    X_norm_te["audio_key"] = X_test["audio_key"].astype("category")
+    X_norm_tr["audio_mode"] = X_train["audio_mode"].astype("category").reset_index(drop = True)
+    X_norm_tr["audio_key"] = X_train["audio_key"].astype("category").reset_index(drop = True)
+    X_norm_te["audio_mode"] = X_test["audio_mode"].astype("category").reset_index(drop = True)
+    X_norm_te["audio_key"] = X_test["audio_key"].astype("category").reset_index(drop = True)
     
     # Get just lyric features
-    lyric_tr = X_norm_tr.loc[:, "lyrics_across":]
-    lyric_te = X_norm_te.loc[:, "lyrics_across":]
+    lyric_tr = X_norm_tr.loc[:, "lyrics_aah":]
+    lyric_te = X_norm_te.loc[:, "lyrics_aah":]
 
     if reduction_method == "pca":
         # Do principal component analysis / dimension reduction on sparse lyric features
@@ -189,7 +191,7 @@ def pre_process(y_train = pd.Series,
                            ], axis = 1)
 
 
-    return label_train, X_norm_tr, X_norm_te, label_encoder
+    return X_norm_tr, label_train, X_norm_te, label_test, label_encoder
 
 
 # -------------------------------------------------------------------------------------------------------------------------
