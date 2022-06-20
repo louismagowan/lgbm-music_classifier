@@ -263,7 +263,7 @@ def plot_tsne(data):
     # Add plots
     g.map(sns.scatterplot, "tsne-2d-one", "tsne-2d-two", alpha = 0.3)
     # Add titles/legends
-    g.fig.suptitle("t-SNE Plots vs Number of Principal Components Included", y = 1.01)
+    g.fig.suptitle("t-SNE Plots vs Number of Principal Components Included", y = 1)
     g.add_legend()
 
 
