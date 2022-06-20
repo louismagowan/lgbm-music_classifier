@@ -9,6 +9,8 @@
 # Original Kaggle files
 Fake.csv
 True.csv
-
+# Outputted graphs
 *.jpeg
 *.png
+# CSVs
+*.csv
