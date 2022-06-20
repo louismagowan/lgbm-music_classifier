@@ -34,7 +34,7 @@ def lgb_f1_score(preds, data):
     validation data.
     """
     labels = data.get_label()
-    preds = preds.reshape(4, -1).T
+    preds = preds.reshape(5, -1).T
     preds = preds.argmax(axis = 1)
     f_score = f1_score(labels , preds,  average = 'macro')
     return 'f1_score', f_score, True
