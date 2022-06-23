@@ -37,7 +37,7 @@ The modelling itself is done using LightGBM and Optuna, a hyperparamter optimiza
 
 A range of output dimensions and Optuna trials were tried with the 3 dimension reduction methods. The strongest performing model overall was one that used PCA to reduce the lyric features into 400 dimensions. It achieved a test macro F1 score of 66.48%.
 
-Feel free to check out the Medium article on this [here](https://medium.com/@louismagowan42)
+Feel free to check out the Medium article on this [here](https://medium.com/@louismagowan42).
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
