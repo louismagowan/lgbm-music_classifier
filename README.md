@@ -27,17 +27,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+This project tries to classify English language songs from a [Kaggle dataset](https://www.kaggle.com/datasets/imuhammad/audio-features-and-lyrics-of-spotify-songs) of publicly available music data into their genres. The pre-processing of the data can be run using the prep_kaggle_data.py script or, alternatively, the processed data is avaialble in the zipped csv in this repo (music_data.csv.zip).
 
-WIP!!!! 
-This project looks at building, training and evaluating neural networks to solve the [fake news classification problem](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset) on Kaggle. It uses Python and Keras. 
+Exploratory data analysis of the music data can be found in the eda.ipynb notebook. Exploratory dimension reduction was also conducted using PCA and t-SNE over the lyric features of the songs (which are highly sparse). This was just to get an early indication of how dimension reduction may be useful to the task of classifying the songs into their genres.
 
-Gated Recurrent Units (GRUs) are used, along with batch normalization and both spaCy and Keras embedding layers. 
+For the actual modelling, the lyric data can be reduced to a user-specified number of output dimensions and can be reduced with either PCA, Truncated SVD or a Keras undercomplete encoder. 
 
-Keras embedded models appear to outperform those with a static spaCy embedding and manage to achieve extremely high test accuracies (99%+).
+The modelling itself is done using LightGBM and Optuna, a hyperparamter optimization framework.
 
-The run_models.ipynb notebook contains a demo of how code from the two Python files can be used to easily implement the networks needed to solve this task.
-
-<b>Caveat:</b> The Kaggle dataset is not ideal- there are leakages (that I've tried to remove) and issues around its provenance. However, the papers that produced the dataset are reasonably well cited (~200 citations) on Google Scholar. In any case, this project is presented as more of a fun tutorial/look at how deep learning approaches could be used to solve the problem of fake news identification, rather than any serious, real-world classifier.
+A range of output dimensions and Optuna trials were tried with the 3 dimension reduction methods. The strongest performing model overall was one that used PCA to reduce the lyric features into 400 dimensions. It achieved a test macro F1 score of 66.48%.
 
 Feel free to check out the Medium article on this [here](https://medium.com/@louismagowan42)
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -45,8 +43,9 @@ Feel free to check out the Medium article on this [here](https://medium.com/@lou
 ### Built With
 
 * [Keras](https://keras.io/)
-* [spaCy](https://spacy.io/)
-* [Tensorflow](https://www.tensorflow.org/)
+* [LightGBM]([https://spacy.io/](https://lightgbm.readthedocs.io/en/latest/))
+* [Scikit-Learn](https://scikit-learn.org/stable/)
+* [Optuna](https://optuna.readthedocs.io/en/stable/tutorial/index.html)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -65,6 +64,8 @@ Feel free to check out the Medium article on this [here](https://medium.com/@lou
 ## Acknowledgments
 
 * [othneildrew - README template](https://github.com/othneildrew/Best-README-Template/blob/master/BLANK_README.md)
+* [Bex T. - Medium Writer](https://towardsdatascience.com/kagglers-guide-to-lightgbm-hyperparameter-tuning-with-optuna-in-2021-ed048d9838b5)
+* [Muhammad Nakhaee, Kaggle](https://www.kaggle.com/datasets/imuhammad/audio-features-and-lyrics-of-spotify-songs)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
